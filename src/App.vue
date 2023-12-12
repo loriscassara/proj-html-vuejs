@@ -18,6 +18,12 @@
             return {
                 store
             }
+        },
+        mounted(){
+            const cursor = document.querySelector('.cursor');
+            document.addEventListener('mousemove', e => {
+                cursor.setAttribute('style', 'top: '+(e.pageY - 30)+'px; left: '+(e.pageX - 30)+'px;')
+            })
         }
     }
 
@@ -26,6 +32,11 @@
 <!-- start template -->
 
 <template>
+
+    <!-- cursor animate section -->
+
+    <div class="cursor"></div>
+
     <header>
         <AppHeader />
     </header>
@@ -37,7 +48,6 @@
     <footer>
         <AppFooter />
     </footer>
-
 </template>
 
 <!-- start style import scss -->
