@@ -74,7 +74,7 @@
 
             &:hover { cursor: pointer; }
         
-            &:after {
+            &::after {
                 content: '';
                 position: absolute;
                 background-color: $themeBlack;
@@ -85,7 +85,7 @@
                 transition: 0.3s;
             }
 
-            &:hover:after { width: 100%; }
+            &:hover::after { width: 100%; }
         }
 
         .wrap {
@@ -94,6 +94,8 @@
             left: 79%;
             transform: translate(-50%, -50%);
 
+            &:hover { cursor: pointer; }
+
             .menu {
                 width: 30px;
                 height: 2px;
@@ -101,13 +103,14 @@
                 margin: 6px 0;
             }
 
-            &:hover { cursor: pointer; }
-
             #menu-hover {
                 width: 20px;
                 height: 2px;
                 background-color: $themeBlack;
                 margin: 6px 0;
+                transition: 0.3s;
+
+                &:hover { width: 30px; }
             }
         }
 
