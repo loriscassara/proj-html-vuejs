@@ -26,6 +26,17 @@
 <!-- start template -->
 
 <template>
+    <header>
+        <AppHeader />
+    </header>
+
+    <main>
+        <AppMain />
+    </main>
+
+    <footer>
+        <AppFooter />
+    </footer>
 
 </template>
 
