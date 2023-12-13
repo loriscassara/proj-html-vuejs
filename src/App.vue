@@ -36,15 +36,15 @@ export default {
 
     <div class="cursor"></div>
 
-    <header>
+    <header class="position-relative">
         <AppHeader />
     </header>
 
-    <main>
+    <main class="position-relative">
         <AppMain />
     </main>
 
-    <footer>
+    <footer class="position-relative">
         <AppFooter />
     </footer>
 </template>
