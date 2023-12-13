@@ -3,11 +3,37 @@
 <script>
 
 import AppSecondCarousel from './AppSecondCarousel.vue'
+import AppEventFirst from './appevents/AppEventFirst.vue'
+import AppEventSecond from './AppEvents/AppEventSecond.vue'
 
 export default {
     name: 'AppMain',
     components: {
-        AppSecondCarousel
+        AppSecondCarousel,
+        AppEventFirst,
+        AppEventSecond
+    },
+    mounted() {
+        const firstBtn = document.querySelector('#first-button');
+        const secondBtn = document.querySelector('#second-button');
+        const firstEvent = document.querySelector('#first-event');
+        const secondEvent = document.querySelector('#second-event');
+
+        firstBtn.addEventListener('click', function () {
+            secondBtn.classList.remove('btn-dark');
+            secondBtn.classList.add('btn-light');
+            firstBtn.classList.add('btn-dark');
+            firstEvent.classList.remove('d-none');
+            secondEvent.classList.add('d-none');
+        })
+
+        secondBtn.addEventListener('click', function () {
+            firstBtn.classList.remove('btn-dark');
+            firstBtn.classList.add('btn-light');
+            secondBtn.classList.add('btn-dark');
+            firstEvent.classList.add('d-none');
+            secondEvent.classList.remove('d-none');
+        })
     }
 }
 
@@ -108,6 +134,25 @@ export default {
     <p class="text-center">Learn from the mountain biking expert.</p>
 
     <AppSecondCarousel />
+
+    <!-- start our events -->
+
+    <h1 class="fw-bold" id="title-events">Don't Miss Our Events!</h1>
+    <p class="text-center">Get the amazing cycling experience.</p>
+    <div class="events-container">
+        <div class="title-botton d-flex justify-content-between">
+            <h4>Events</h4>
+            <div class="button-container">
+                <button class="btn btn-dark" id="first-button"><font-awesome-icon icon="fa-solid fa-square" /></button>
+                <button class="btn btn-light ms-2" id="second-button"><font-awesome-icon icon="fa-solid fa-bars" /></button>
+            </div>
+        </div>
+
+        <AppEventFirst class="" id="first-event" />
+
+        <AppEventSecond class="d-none" id="second-event" />
+
+    </div>
 </template>
 
 <!-- start style -->
@@ -169,5 +214,15 @@ export default {
 #title-carousel {
     padding-top: 15rem;
     text-align: center;
+}
+
+#title-events {
+    padding-top: 8rem;
+    text-align: center;
+}
+
+.events-container {
+    width: 76%;
+    margin: 0 auto;
 }
 </style>
