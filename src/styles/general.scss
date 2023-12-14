@@ -5,8 +5,13 @@
 @import "bootstrap/scss/bootstrap";
 
 //Common UI elements
-* { list-style: none; }
-body { font-family: sans-serif; }
+* {
+    list-style: none;
+}
+
+body {
+    font-family: sans-serif;
+}
 
 //Animate cursor section
 .cursor {
@@ -23,7 +28,30 @@ body { font-family: sans-serif; }
     from {
         transform: scale(1);
     }
+
     to {
         transform: scale(.7);
     }
+}
+
+//Scrollbar
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $themeWhite;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $themeBlack;
+}
+
+::-webkit-scrollbar-button {
+    background-color: $themeWhite;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: $themeWhite;
 }
