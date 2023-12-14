@@ -150,8 +150,64 @@ export default {
 
         <AppEventFirst class="" id="first-event" />
 
-        <AppEventSecond class="d-none" id="second-event" />
+        <AppEventSecond class="" id="second-event" />
+    </div>
 
+    <!-- start expert trainers -->
+
+    <div class="expert-container">
+        <h1 class="fw-bold pt-5" id="title-expert">Our Expert Trainers</h1>
+        <p class="text-center">Learn to ride a bike from the experts.</p>
+    </div>
+    <div class="card-container-expert d-flex">
+        <div class="card">
+            <img src="../../public/image/biker1.jpg" alt="">
+            <div class="intro d-flex flex-column justify-content-center">
+                <h4 class="fw-bold m-0">Micheal Lee</h4>
+                <p class="fw-bold m-0">Biker</p>
+                <div class="social-container">
+                    <font-awesome-icon class="p-1" icon="fa-brands fa-facebook" />
+                    <font-awesome-icon class="p-1" icon="fa-brands fa-instagram" />
+                    <font-awesome-icon class="p-1" icon="fa-brands fa-twitter" />
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../../public/image/biker4.jpg" alt="">
+            <div class="intro d-flex flex-column justify-content-center">
+                <h4 class="fw-bold m-0">Micheal Lee</h4>
+                <p class="fw-bold m-0">Biker</p>
+                <div class="social-container">
+                    <font-awesome-icon class="p-1" icon="fa-brands fa-facebook" />
+                    <font-awesome-icon class="p-1" icon="fa-brands fa-instagram" />
+                    <font-awesome-icon class="p-1" icon="fa-brands fa-twitter" />
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../../public/image/biker3.jpg" alt="">
+            <div class="intro d-flex flex-column justify-content-center">
+                <h4 class="fw-bold m-0">Micheal Lee</h4>
+                <p class="fw-bold m-0">Biker</p>
+                <div class="social-container">
+                    <font-awesome-icon class="p-1" icon="fa-brands fa-facebook" />
+                    <font-awesome-icon class="p-1" icon="fa-brands fa-instagram" />
+                    <font-awesome-icon class="p-1" icon="fa-brands fa-twitter" />
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../../public/image/biker2.jpg" alt="">
+            <div class="intro d-flex flex-column justify-content-center">
+                <h4 class="fw-bold m-0">Micheal Lee</h4>
+                <p class="fw-bold m-0">Biker</p>
+                <div class="social-container">
+                    <font-awesome-icon class="p-1" icon="fa-brands fa-facebook" />
+                    <font-awesome-icon class="p-1" icon="fa-brands fa-instagram" />
+                    <font-awesome-icon class="p-1" icon="fa-brands fa-twitter" />
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -224,5 +280,63 @@ export default {
 .events-container {
     width: 76%;
     margin: 0 auto;
+}
+
+.expert-container {
+    background-color: $themeGray;
+    margin: 8rem 0;
+    height: 17rem;
+    position: relative;
+}
+
+#title-expert {
+    text-align: center;
+}
+
+.card-container-expert {
+    width: 76%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -16rem;
+    left: 15rem;
+}
+
+.card {
+    height: 300px;
+    width: 300px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    img {
+        height: 400px;
+        width: 280px;
+        border-radius: 3px;
+        transition: .3s;
+    }
+
+    .intro {
+        height: 100px;
+        width: 350px;
+        padding-left: 6px;
+        box-sizing: border-box;
+        position: absolute;
+        background-color: $themeBlack;
+        color: $themeWhite;
+        bottom: 0;
+        transition: .3s;
+    }
+}
+
+.card:hover .intro {
+    height: 120px;
+}
+
+.card:hover img {
+    transform: scale(1.1);
 }
 </style>

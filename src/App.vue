@@ -36,13 +36,19 @@ export default {
 
     <div class="cursor"></div>
 
+    <!-- start header -->
+
     <header class="position-relative">
         <AppHeader />
     </header>
 
+    <!-- starti main -->
+
     <main class="position-relative">
         <AppMain />
     </main>
+
+    <!-- start footer -->
 
     <footer class="position-relative">
         <AppFooter />
