@@ -211,8 +211,87 @@ export default {
     </div>
 
     <!-- start pack section -->
-    <div>
-        <font-awesome-icon icon="fa-solid fa-medal" id="medal" />
+    <div class="d-flex justify-content-center">
+        <div>
+            <font-awesome-icon icon="fa-solid fa-medal" id="medal" />
+        </div>
+    </div>
+    <h1 class="fw-bold text-center pt-2 m-0">Special Packs</h1>
+    <p class="text-center m-0">Select pricing plan to get more</p>
+    <div class="main-container1">
+        <div class="the-card">
+            <div class="the-front d-flex flex-column align-items-center">
+                <font-awesome-icon class="emoji-card" icon="fa-solid fa-handshake" />
+                <h1 class="fw-bold">Basic</h1>
+                <p>Learn to ride a bike from the professionals.</p>
+                <div class="color-black">
+                    <p class="m-0" id="first-text">&#x2713 Phone Mountaineer bike training</p>
+                    <hr>
+                    <p class="m-0">&#x2713 Remote Excellent bike service</p>
+                    <hr>
+                    <p class="m-0">&#x2713 Onsite Safe cycling training</p>
+                    <hr>
+                    <p class="m-0">&#x2717 Saafety helmet on bike</p>
+                    <hr>
+                    <p class="m-0">&#x2717 Free bikes for children</p>
+                </div>
+            </div>
+            <div class="the-back">
+                <h1 class="price-text">BASIC</h1>
+                <h3>1800$</h3>
+                <button class="btn btn-light btn-lg mt-5">Send Request</button>
+            </div>
+        </div>
+    </div>
+    <div class="main-container2">
+        <div class="the-card">
+            <div class="the-front d-flex flex-column align-items-center">
+                <img class="img-price" src="../../public/image/helmet.png" alt="">
+                <h1 class="padding-t fw-bold">Standard</h1>
+                <p>Learn to ride a bike from the professionals.</p>
+                <div class="color-black">
+                    <p class="m-0" id="first-text">&#x2713 Phone Mountaineer bike training</p>
+                    <hr>
+                    <p class="m-0">&#x2713 Remote Excellent bike service</p>
+                    <hr>
+                    <p class="m-0">&#x2713 Onsite Safe cycling training</p>
+                    <hr>
+                    <p class="m-0">&#x2713 Saafety helmet on bike</p>
+                    <hr>
+                    <p class="m-0">&#x2717 Free bikes for children</p>
+                </div>
+            </div>
+            <div class="the-back">
+                <h1 class="price-text">STANDARD</h1>
+                <h3>2500$</h3>
+                <button class="btn btn-light btn-lg mt-5">Send Request</button>
+            </div>
+        </div>
+    </div>
+    <div class="main-container3">
+        <div class="the-card">
+            <div class="the-front d-flex flex-column align-items-center">
+                <img class="img-price" src="../../public/image/racing-helmet.png" alt="">
+                <h1 class="padding-t fw-bold">Premium</h1>
+                <p>Learn to ride a bike from the professionals.</p>
+                <div class="color-black">
+                    <p class="m-0" id="first-text">&#x2713 Phone Mountaineer bike training</p>
+                    <hr>
+                    <p class="m-0">&#x2713 Remote Excellent bike service</p>
+                    <hr>
+                    <p class="m-0">&#x2713 Onsite Safe cycling training</p>
+                    <hr>
+                    <p class="m-0">&#x2713 Saafety helmet on bike</p>
+                    <hr>
+                    <p class="m-0">&#x2713 Free bikes for children</p>
+                </div>
+            </div>
+            <div class="the-back">
+                <h1 class="price-text">PREMIUM</h1>
+                <h3>5000$</h3>
+                <button class="btn btn-light btn-lg mt-5">Send Request</button>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -307,7 +386,7 @@ export default {
     width: 76%;
     margin: 0 auto;
     position: absolute;
-    bottom: 7rem;
+    bottom: 320px;
     left: 15rem;
 }
 
@@ -351,6 +430,113 @@ export default {
 }
 
 #medal {
-    padding-top: 13rem;
+    margin-top: 15rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 70px;
+    background-color: $themeBlack;
+    color: $themeWhite;
+}
+
+.main-container1 {
+    position: absolute;
+    width: 450px;
+    height: 570px;
+    background: none;
+    bottom: -900px;
+    left: 450px;
+    transform: translate(-50%, -50%);
+}
+
+.main-container2 {
+    position: absolute;
+    width: 450px;
+    height: 570px;
+    background: none;
+    bottom: -900px;
+    left: 950px;
+    transform: translate(-50%, -50%);
+}
+
+.main-container3 {
+    position: absolute;
+    width: 450px;
+    height: 570px;
+    background: none;
+    bottom: -900px;
+    left: 1450px;
+    transform: translate(-50%, -50%);
+}
+
+.the-card {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    box-shadow: 0px 0px 28px 5px rgba(0, 0, 0, 0.3);
+}
+
+.the-card:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.the-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: linear-gradient(175deg, black 50%, white 50%);
+    color: white;
+
+    .emoji-card {
+        font-size: 100px;
+    }
+
+    .img-price {
+        width: 85px;
+        position: absolute;
+        filter: invert(1);
+        top: 10px;
+    }
+
+    #first-text {
+        padding-top: 7rem;
+    }
+}
+
+.color-black {
+    color: black;
+}
+
+.padding-t {
+    padding-top: 6.5rem;
+}
+
+.the-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: black;
+    color: white;
+    text-align: center;
+    transform: rotateY(180deg);
+
+    .price-text {
+        padding-top: 8rem;
+    }
 }
 </style>
