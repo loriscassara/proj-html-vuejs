@@ -128,11 +128,11 @@ export default {
             background-color: $themeBlack;
             margin: 6px 0;
             transition: 0.3s;
-
-            &:hover {
-                width: 30px;
-            }
         }
+    }
+
+    .wrap:hover #menu-hover {
+        width: 30px;
     }
 
     .offcanvas {
