@@ -293,6 +293,87 @@ export default {
             </div>
         </div>
     </div>
+
+    <!-- start articles section -->
+
+    <div class="article-section">
+        <h1 class="fw-bold text-center pt-5">Resent New & Articles</h1>
+        <p class="text-center">Important information about bike</p>
+    </div>
+    <div class="card-wrapper-container d-flex">
+        <div class="tilting-card-wrapper1">
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="tilting-card-body">
+                <img class="pt-4 rounded" src="../../public/image/news-bike5-300x180.jpg" alt="">
+                <p class="fw-bold">22.06.2022 - Bike</p>
+                <h4 class="fw-bold">Road bike or mountain <br> bike?</h4>
+                <p>Compared to similar road bikes with a <br> solid frame structure, [...] </p>
+                <button class="btn btn-dark mt-4">More</button>
+            </div>
+        </div>
+        <div class="tilting-card-wrapper2">
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="tilting-card-body">
+                <img class="pt-4 rounded" src="../../public/image/news-bike6-300x180.jpg" alt="">
+                <p class="fw-bold">22.06.2022 - Bike</p>
+                <h4 class="fw-bold">What is mountain biking <br> called?</h4>
+                <p>Mountain biking is one of the most <br> popular outdoor sports, [...] </p>
+                <button class="btn btn-dark mt-4">More</button>
+            </div>
+        </div>
+        <div class="tilting-card-wrapper3">
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="tilting-card-body">
+                <img class="pt-4 rounded" src="../../public/image/news-bike3-300x180.jpg" alt="">
+                <p class="fw-bold">22.06.2022 - Bike</p>
+                <h4 class="fw-bold">How much should you <br> cycle a day?</h4>
+                <p>In order to get the right benefit from <br> the exercise [...] </p>
+                <button class="btn btn-dark mt-4">More</button>
+            </div>
+        </div>
+        <div class="tilting-card-wrapper4">
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="mouse-position-tracker"></div>
+            <div class="tilting-card-body">
+                <img class="pt-4 rounded" src="../../public/image/news-bike4-300x180.jpg" alt="">
+                <p class="fw-bold">22.06.2022 - Bike</p>
+                <h4 class="fw-bold">How long does it take 5 <br> km by bike?</h4>
+                <p>It takes 5 km and 10 minutes, sir. But at <br> [...] </p>
+                <button class="btn btn-dark mt-4">More</button>
+            </div>
+        </div>
+    </div>
 </template>
 
 <!-- start style -->
@@ -386,7 +467,7 @@ export default {
     width: 76%;
     margin: 0 auto;
     position: absolute;
-    bottom: 320px;
+    bottom: 2150px;
     left: 15rem;
 }
 
@@ -443,7 +524,7 @@ export default {
     width: 450px;
     height: 570px;
     background: none;
-    bottom: -900px;
+    bottom: 950px;
     left: 450px;
     transform: translate(-50%, -50%);
 }
@@ -453,7 +534,7 @@ export default {
     width: 450px;
     height: 570px;
     background: none;
-    bottom: -900px;
+    bottom: 950px;
     left: 950px;
     transform: translate(-50%, -50%);
 }
@@ -463,7 +544,7 @@ export default {
     width: 450px;
     height: 570px;
     background: none;
-    bottom: -900px;
+    bottom: 950px;
     left: 1450px;
     transform: translate(-50%, -50%);
 }
@@ -538,5 +619,142 @@ export default {
     .price-text {
         padding-top: 8rem;
     }
+}
+
+.article-section {
+    margin-top: 750px;
+    background-color: $themeGray;
+    padding-bottom: 550px;
+}
+
+.tilting-card-body {
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.mouse-position-tracker {
+    position: absolute;
+    width: calc(100% / 3);
+    height: calc(100% / 3);
+    z-index: 2;
+}
+
+.mouse-position-tracker:nth-child(3n - 2) {
+    left: 0;
+}
+
+.mouse-position-tracker:nth-child(3n - 1) {
+    left: calc(100% / 3);
+}
+
+.mouse-position-tracker:nth-child(3n) {
+    right: 0;
+}
+
+.mouse-position-tracker:nth-child(n + 4):nth-child(-n + 6) {
+    top: calc(100% / 3);
+}
+
+.mouse-position-tracker:nth-child(n + 7):nth-child(-n + 9) {
+    bottom: 0;
+}
+
+.tilting-card-wrapper1 {
+    position: relative;
+    bottom: 535px;
+    left: 200px;
+    width: 20rem;
+    height: 28rem;
+}
+
+.tilting-card-wrapper2 {
+    position: relative;
+    bottom: 535px;
+    left: 250px;
+    width: 20rem;
+    height: 28rem;
+}
+
+.tilting-card-wrapper3 {
+    position: relative;
+    bottom: 535px;
+    left: 300px;
+    width: 20rem;
+    height: 28rem;
+}
+
+.tilting-card-wrapper4 {
+    position: relative;
+    bottom: 535px;
+    left: 350px;
+    width: 20rem;
+    height: 28rem;
+}
+
+.tilting-card-body {
+    position: absolute;
+    inset: 0;
+    box-shadow: 0px 0px 28px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.tilting-card-body> :where(h1, p) {
+    background: white;
+    padding: 0.2rem;
+    margin: 0;
+}
+
+.tilting-card-body {
+    --perspective: 500px;
+    --rotationX: 0;
+    --rotationY: 0;
+    --rotationZ: 0;
+    --angle: 15deg;
+    transform: perspective(var(--perspective)) rotateX(var(--rotationX)) rotateY(var(--rotationY)) rotateZ(var(--rotationZ));
+    transition: transform 500ms ease;
+}
+
+.mouse-position-tracker:nth-child(1):hover~.tilting-card-body {
+    --rotationX: var(--angle);
+    --rotationY: calc(var(--angle) * -1);
+}
+
+.mouse-position-tracker:nth-child(2):hover~.tilting-card-body {
+    --rotationX: var(--angle);
+}
+
+.mouse-position-tracker:nth-child(3):hover~.tilting-card-body {
+    --rotationX: var(--angle);
+    --rotationY: var(--angle);
+}
+
+.mouse-position-tracker:nth-child(4):hover~.tilting-card-body {
+    --rotationY: calc(var(--angle) * -1);
+}
+
+.mouse-position-tracker:nth-child(6):hover~.tilting-card-body {
+    --rotationY: var(--angle);
+}
+
+.mouse-position-tracker:nth-child(7):hover~.tilting-card-body {
+    --rotationY: calc(var(--angle) * -1);
+    --rotationX: calc(var(--angle) * -1);
+}
+
+.mouse-position-tracker:nth-child(8):hover~.tilting-card-body {
+    --rotationX: calc(var(--angle) * -1);
+}
+
+.mouse-position-tracker:nth-child(9):hover~.tilting-card-body {
+    --rotationY: var(--angle);
+    --rotationX: calc(var(--angle) * -1);
+}
+
+:root {
+    --shadow: 0px 1px 2.2px rgba(0, 0, 0, 0.02),
+        0px 2.5px 5.3px rgba(0, 0, 0, 0.028), 0px 4.6px 10px rgba(0, 0, 0, 0.035),
+        0px 8.3px 17.9px rgba(0, 0, 0, 0.042), 0px 15.5px 33.4px rgba(0, 0, 0, 0.05),
+        0px 37px 80px rgba(0, 0, 0, 0.07);
 }
 </style>
