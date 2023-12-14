@@ -209,6 +209,11 @@ export default {
             </div>
         </div>
     </div>
+
+    <!-- start pack section -->
+    <div>
+        <font-awesome-icon icon="fa-solid fa-medal" id="medal" />
+    </div>
 </template>
 
 <!-- start style -->
@@ -217,6 +222,11 @@ export default {
 @use '../styles/partials/_variables' as *;
 
 //Carousel section
+
+#carouselExampleCaptions {
+    padding-top: 5rem;
+}
+
 .carousel-item {
     height: 818px;
     position: relative;
@@ -297,7 +307,7 @@ export default {
     width: 76%;
     margin: 0 auto;
     position: absolute;
-    bottom: -16rem;
+    bottom: 7rem;
     left: 15rem;
 }
 
@@ -338,5 +348,9 @@ export default {
 
 .card:hover img {
     transform: scale(1.1);
+}
+
+#medal {
+    padding-top: 13rem;
 }
 </style>

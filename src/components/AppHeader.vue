@@ -18,8 +18,8 @@ export default {
 <!-- start template -->
 
 <template>
-    <nav class="navbar bg-body-light" id="nav">
-        <div class="container-fluid">
+    <nav class="navbar bg-body-light fixed-top" id="nav">
+        <div class="container-fluid" id="container-nav">
             <a class="navbar-brand" href="#">
                 <img src="../../public/image/logo-gobike.png" alt="Logo" width="30" height="24"
                     class="d-inline-block align-text-top w-100" id="nav-logo">
@@ -69,8 +69,13 @@ export default {
 @use '../styles/partials/_variables' as *;
 
 #nav {
-    width: 76%;
-    margin: 0 auto;
+    height: 7rem;
+    background-color: white;
+
+    #container-nav {
+        width: 76%;
+        margin: 0 auto;
+    }
 
     #nav-logo {
         height: 4.7rem;
@@ -103,7 +108,7 @@ export default {
     .wrap {
         position: absolute;
         top: 50%;
-        left: 79%;
+        left: 72%;
         transform: translate(-50%, -50%);
 
         &:hover {
